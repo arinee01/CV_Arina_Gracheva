@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Arina Gracheva | Senior Sales Specialist</title>
     <meta
       name="description"
-      content="Резюме Арины Грачевой: Senior Sales Specialist, International B2B Sales, Key Account Management, English C1."
+      content="Arina Gracheva resume: Senior Sales Specialist, International B2B Sales, Key Account Management, English C1."
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -380,5 +380,174 @@
         </div>
       </section>
     </main>
+    <aside class="language-switcher" aria-label="Language switcher">
+      <div>
+        <strong>Language / Язык</strong>
+        <p>Default: English. Switch to Russian if needed.</p>
+      </div>
+      <div class="language-switcher__buttons" role="group" aria-label="Select language">
+        <button type="button" class="is-active" data-language-option="en">EN</button>
+        <button type="button" data-language-option="ru">RU</button>
+      </div>
+    </aside>
+
+    <script>
+      const singleTranslations = [
+        [".hero__lead", "Key Account Manager with experience in international B2B sales, enterprise-level negotiations in English, and strategic account work with companies such as Shell, BP, Saudi Aramco and ENI."],
+        [".hero__actions .button:nth-child(1)", "Experience"],
+        [".hero__actions .button:nth-child(2)", "Role Fit"],
+        [".metrics article:nth-child(1) span", "3 months"],
+        [".metrics article:nth-child(1) p", "to promotion to Lead Key Account Manager"],
+        [".metrics article:nth-child(2) p", "largest project deal: Diamond Sponsorship"],
+        [".metrics article:nth-child(3) p", "English C1, TOEFL, negotiations and presentations"],
+        [".metrics article:nth-child(4) p", "Master's Degree, University of Bologna"],
+        ["#summary h2", "International B2B Sales, Strategic Accounts and Executive Communication"],
+        ["#summary p:nth-of-type(1)", "Sales professional with full-cycle experience across prospecting, qualification, consultative selling, negotiation, closing, relationship management, upselling and cross-selling. Negotiated with international clients and senior stakeholders including CEOs, CTOs, General Managers and Business Development Directors fully in English."],
+        ["#summary p:nth-of-type(2)", "Combines B2B and EdTech sales experience with an academic background in digital products, UX, analytics, NLP, data analysis, project management and pedagogy. Training in psychology and teaching methodology helps identify client motivation, explain complex products clearly and build trust-based communication. Ready for a Senior Sales Specialist role in an international SaaS team. ICOM member, part of an international professional network in culture and museums associated with UNESCO."],
+        ["#competencies-title", "Core Competencies"],
+        ["#experience-title", "Professional Experience"],
+        ["#education-title", "Education"],
+        ["#education article:nth-of-type(2) p", "Bachelor's Degree — Computer Science Teacher"],
+        ["#education article:nth-of-type(3) p", "Membership in an international professional network associated with UNESCO"],
+        [".section--split .panel:nth-child(2) h2", "Technical Skills"],
+        ["#role-fit h2", "Fit for a Senior Sales Specialist Role"],
+        ["#role-fit .section__body > p", "Senior sales professional with an international B2B background, strategic account experience and executive-level negotiations in English. Strong profile for international SaaS and EdTech sales due to a combination of consultative selling, CRM pipeline management, digital product literacy and the ability to work with international clients."],
+        ["#gallery-title", "Achievements Gallery"],
+        [".gallery-intro", "International academic environment, studies in Italy, Digital Humanities conferences and B2B project experience."]
+      ];
+
+      const listTranslations = [
+        ["#experience .role:nth-of-type(1) li", [
+          "Managed the full cycle of international B2B sales: prospecting, qualification, consultative selling, negotiation, closing, relationship management and account growth.",
+          "Promoted to Lead Key Account Manager after 3 months based on commercial results, ownership and work with high-value accounts.",
+          "Closed the largest project deal: £22,000 Diamond Sponsorship.",
+          "Negotiated with CEOs, CTOs, General Managers and Business Development Directors at international companies.",
+          "Developed relationships with strategic accounts including Shell, BP, Saudi Aramco, ENI, LNG companies and global energy corporations.",
+          "Conducted negotiations, presentations and business correspondence fully in English.",
+          "Consistently exceeded KPIs by prioritizing high-potential opportunities, precise follow-up and pipeline management.",
+          "Identified client business needs, used stakeholder mapping and positioned relevant sponsorship and partnership solutions.",
+          "Increased account value through cross-selling, upselling and long-term relationship development.",
+          "Managed CRM records, deal stages, communication history, follow-up activity and opportunity status.",
+          "Represented the company at international congresses, building relationships with senior stakeholders and identifying new commercial opportunities.",
+          "Participated in organizing LNG Congress and AUTOA Plus, combining sales execution, event strategy and client-facing communication."
+        ]],
+        ["#experience .role:nth-of-type(2) li", [
+          "Ranked among top sales performers in a competitive sales environment.",
+          "Won premium sales competitions by exceeding targets and demonstrating strong conversion performance.",
+          "Sold subscription-based education products through needs discovery, objection handling and value-based positioning.",
+          "Found common ground with different client types, including people who initially did not believe they could start learning English.",
+          "Converted client doubt into motivation to buy through empathy, precise barrier diagnosis and clear explanation of product value.",
+          "Mentored new employees on sales techniques, product knowledge and client communication standards.",
+          "Contributed to the launch of new subscription products by testing sales messaging and collecting customer feedback.",
+          "Improved conversion through accurate needs discovery, personalized recommendations and systematic follow-up."
+        ]],
+        ["#experience .role:nth-of-type(3) li", [
+          "Conducted consultative sales conversations, identifying client goals, barriers and decision criteria.",
+          "Managed CRM pipeline activity: lead tracking, follow-ups, deal stages and conversion opportunities.",
+          "Delivered product presentations focused on client needs, value proposition and expected outcomes.",
+          "Qualified inbound and outbound opportunities by motivation, fit and purchase readiness.",
+          "Maintained pipeline discipline to support regular follow-up and predictable sales activity.",
+          "Built trust through clear communication, needs-based recommendations and professional objection handling."
+        ]],
+        ["#education article:nth-of-type(1) li", [
+          "Completed a full-time international Master's program in English.",
+          "Studied digital products, UX, analytics, NLP, data analysis and project management.",
+          "Selected to participate in an international Digital Humanities conference in Sardinia due to outstanding academic performance.",
+          "Developed cross-cultural communication skills in an international English-speaking academic environment."
+        ]],
+        ["#education article:nth-of-type(2) li", [
+          "Built a pedagogical foundation in computer science, teaching methodology and structured explanation of complex technical topics.",
+          "Completed around 12 psychology courses over 5 years, covering motivation, perception, communication and age-related learning differences.",
+          "Transferred pedagogical skills into sales: active listening, needs discovery, adapting explanations to the audience and handling resistance.",
+          "Developed public speaking, clear presentation and audience engagement skills."
+        ]],
+        ["#education article:nth-of-type(3) li", [
+          "Supports an international professional context, cultural awareness and understanding of communication across different audiences."
+        ]]
+      ];
+
+      const roleCards = [
+        ["Enterprise-ready", "Experience negotiating with CEOs, CTOs, General Managers and Business Development Directors."],
+        ["SaaS-ready", "Understanding of digital products, UX, analytics and subscription-based sales."],
+        ["Global communication", "English C1, TOEFL, full-time studies in Italy and negotiations with clients from different regions."],
+        ["Commercial impact", "Promotion after 3 months, KPI overperformance and the largest project deal."],
+        ["Territory flexibility", "Worked according to the local time of the sales territory: negotiations with China at 6:00 and with the USA at 23:00."],
+        ["Travel-ready", "Ready for international business trips; strong visa history and residence permit experience."]
+      ];
+
+      const galleryCards = [
+        ["International Conference in Cagliari", "Invited to participate in the Digital Humanities conference in Sardinia due to strong academic results, high academic workload and performance."],
+        ["Professional Participation", "Participation in an international academic event focused on digital humanities and public engagement."],
+        ["30/30 in Digital Heritage", "High result in Digital Heritage and Multimedia, 12 credits."],
+        ["Master's Admission in Italy", "Relocation and studies in the international English-language program at the University of Bologna."],
+        ["International B2B Sales", "Work with international B2B projects, strategic accounts and enterprise communication."],
+        ["CRM, pipeline, negotiations", "Full sales cycle: prospecting, qualification, negotiation, closing and account growth."]
+      ];
+
+      const languageState = [];
+
+      function remember(element) {
+        if (!element.dataset.ruText) {
+          element.dataset.ruText = element.innerHTML;
+        }
+      }
+
+      function applySingleTranslations(language) {
+        singleTranslations.forEach(([selector, english]) => {
+          const element = document.querySelector(selector);
+          if (!element) return;
+          remember(element);
+          element.innerHTML = language === "en" ? english : element.dataset.ruText;
+        });
+      }
+
+      function applyListTranslations(language) {
+        listTranslations.forEach(([selector, englishItems]) => {
+          document.querySelectorAll(selector).forEach((element, index) => {
+            remember(element);
+            element.innerHTML = language === "en" ? englishItems[index] : element.dataset.ruText;
+          });
+        });
+      }
+
+      function applyCardTranslations(language) {
+        document.querySelectorAll("#role-fit .fit-grid article").forEach((card, index) => {
+          const heading = card.querySelector("h3");
+          const paragraph = card.querySelector("p");
+          if (!heading || !paragraph || !roleCards[index]) return;
+          remember(heading);
+          remember(paragraph);
+          heading.innerHTML = language === "en" ? roleCards[index][0] : heading.dataset.ruText;
+          paragraph.innerHTML = language === "en" ? roleCards[index][1] : paragraph.dataset.ruText;
+        });
+
+        document.querySelectorAll(".achievement-card").forEach((card, index) => {
+          const heading = card.querySelector("h3");
+          const paragraph = card.querySelector("p");
+          if (!heading || !paragraph || !galleryCards[index]) return;
+          remember(heading);
+          remember(paragraph);
+          heading.innerHTML = language === "en" ? galleryCards[index][0] : heading.dataset.ruText;
+          paragraph.innerHTML = language === "en" ? galleryCards[index][1] : paragraph.dataset.ruText;
+        });
+      }
+
+      function setLanguage(language) {
+        applySingleTranslations(language);
+        applyListTranslations(language);
+        applyCardTranslations(language);
+        document.documentElement.lang = language;
+        document.body.dataset.language = language;
+        document.querySelectorAll("[data-language-option]").forEach((button) => {
+          button.classList.toggle("is-active", button.dataset.languageOption === language);
+        });
+      }
+
+      document.querySelectorAll("[data-language-option]").forEach((button) => {
+        button.addEventListener("click", () => setLanguage(button.dataset.languageOption));
+      });
+
+      setLanguage("en");
+    </script>
   </body>
 </html>
