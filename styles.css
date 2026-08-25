@@ -154,6 +154,39 @@ h3 {
   line-height: 1.55;
 }
 
+.hero__contacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  max-width: 720px;
+  margin: -12px 0 28px;
+  color: var(--accent-strong);
+  font-weight: 800;
+}
+
+.hero__contacts a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.hero__contacts svg {
+  width: 17px;
+  height: 17px;
+  flex: 0 0 auto;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.9;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.hero__contacts a:hover {
+  text-decoration: underline;
+}
+
 .hero__actions {
   display: flex;
   flex-wrap: wrap;
